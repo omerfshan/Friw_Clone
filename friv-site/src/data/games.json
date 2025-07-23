@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Balon Patlat",
+    "image": "/assets/bubble.jpg",
+    "category": "Aksiyon"
+  },
+  {
+    "id": 2,
+    "title": "Kelime Oyunu",
+    "image": "/assets/word.png",
+    "category": "Bulmaca"
+  },
+  {
+    "id": 3,
+    "title": "Zıpla Kaç",
+    "image": "/assets/jump.png",
+    "category": "Macera"
+  }
+]
