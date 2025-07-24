@@ -1,19 +1,22 @@
+// App.jsx
+import { Routes, Route } from 'react-router-dom';
+import Header from './Companents/Header';
+import Home from './Pages/Home';
 
-import Header from './Compenent/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 function App() {
-  
-
   return (
     <>
-    <div>
-      <Header/>
+      <Header />
+      <div className="container mt-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+     
+        </Routes>
       </div>
     </>
-  
-  )
+  );
 }
 
-export default App
+export default App;

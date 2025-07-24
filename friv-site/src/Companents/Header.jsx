@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
 
+import { NavLink } from 'react-router-dom';
 function Header() {
     return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">sfdf
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid px-3">
-            <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
+            <NavLink className="navbar-brand d-flex align-items-center gap-2" to="/">
                 <img src="/assets/react.svg" alt="Logo" width="%30" height="%30" />
                 Friv Oyunları
-             </Link>
+             </NavLink>
              <button
              className="navbar-toggler"
              type="button"
@@ -19,10 +19,10 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/">Ana Sayfa</Link>
+                        <NavLink className="nav-link" to="/">Ana Sayfa</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/favorites">Favoriler</Link>
+                        <NavLink className="nav-link" to="/favorites">Favoriler</NavLink>
                     </li>
           
                 </ul>
@@ -37,8 +37,8 @@ function Header() {
             <button className="btn btn-outline-light btn-sm" type="submit">Ara</button>
             </form>
              <div className="d-flex gap-3 mt-2 mt-lg-0">
-                <Link to="/" className="btn btn-outline-light btn-sm">Giriş</Link>
-                <Link to="/" className="btn btn-primary btn-sm">Kayıt Ol</Link>
+                <NavLink to="/" className="btn btn-outline-light btn-sm">Giriş</NavLink>
+                <NavLink to="/" className="btn btn-primary btn-sm">Kayıt Ol</NavLink>
              </div>
 
         </div>
