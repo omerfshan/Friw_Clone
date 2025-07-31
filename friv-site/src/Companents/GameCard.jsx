@@ -1,13 +1,29 @@
+import { useState } from "react";
 import React from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 function GameCard({ title, image, description }) {
+  const [isfavorite,setfavorite]=useState(false);
   return (
     <div className="card h-100 shadow-sm rounded overflow-hidden">
+      <span className="position-absolute top-0 end-0 m-2"
+      onClick={()=>setfavorite(!isfavorite)}
+      >
+        
+        <i c className={`bi ${
+           isfavorite ? "bi-heart-fill text-danger":"bi-heart text-secondary" 
+          }`} style={{fontSize:"22px"}}
+          >
+
+
+        </i>
+      </span>
       <img src={image} className="card-img-top" alt={title} />
       <div className="card-body d-flex flex-column bg-light">
         <h5 className="card-title">{title}</h5>
         <p className="card-text small flex-grow-1">{description}</p>
-        <button className="btn btn-primary mt-auto">Oyna</button>
+        {/* <button className="btn btn-primary mt-auto">Oyna</button> */}
       </div>
     </div>
   );

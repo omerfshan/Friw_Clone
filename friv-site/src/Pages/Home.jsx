@@ -16,6 +16,21 @@ function Home() {
       title: "Balon Patlatma",
       image: "./Assets/images/zeka.jpg",
       description: "Renkli balonları patlatarak puan topla!"
+    },
+    {
+      title: "Zeka Oyunu",
+      image: "./Assets/Images/zeka.jpg",
+      description: "Zekanızı zorlayacak harika bir oyun!"
+    },
+    {
+      title: "Araba Yarışı",
+      image: "./Assets/Images/zeka.jpg",
+      description: "Hız tutkunları için nefes kesici yarış!"
+    },
+    {
+      title: "Balon Patlatma",
+      image: "./Assets/images/zeka.jpg",
+      description: "Renkli balonları patlatarak puan topla!"
     }
   ];
 
